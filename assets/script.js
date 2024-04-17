@@ -6,17 +6,32 @@ const collectEmployees = function () {
   let employees = [];
   let addEmployees = true;
 
-  while (addEmployees) {}
+  while (addEmployees) {
+    const firstName = prompt("What is the employee's first name?");
+    const lastName = prompt("What is the employee's last name?");
+    const salary = prompt("What is the employee's salary?");
+
+    employees.push({
+      firstName: firstName,
+      lastName: lastName,
+      salary: salary,
+    });
+
+    addEmployees = comfirm("Would you like to add another input?");
+  }
+  return employees;
 };
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
+  // Calculate and display the average salary
 };
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
+  const random = Math.floor(Math.random() * employeesArray.length);
+  console.log(random, employeesArray[random]);
 };
 
 /*
