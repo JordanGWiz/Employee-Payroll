@@ -6,11 +6,13 @@ const collectEmployees = function () {
   let employees = [];
   let addEmployees = true;
 
+  //Loop to collect employee detials until user chooses to stop.
   while (addEmployees) {
     const firstName = prompt("What is the employee's first name?");
     const lastName = prompt("What is the employee's last name?");
     const salary = prompt("What is the employee's salary?");
 
+    //Construct an employee object and add to the array.
     let employee = {
       firstName: firstName,
       lastName: lastName,
@@ -32,6 +34,7 @@ const displayAverageSalary = function (employeesArray) {
     totalSalary += parseFloat(employeesArray[i].salary);
   }
   const averageSalary = totalSalary / employeesArray.length;
+  //Log the average salary
   console.log(
     `The average salary between our ${
       employeesArray.length
@@ -44,18 +47,11 @@ const displayAverageSalary = function (employeesArray) {
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
-  // TODO: Select and display a random employee
   const random = Math.floor(Math.random() * employeesArray.length);
   console.log(
     `Congratulations to ${employeesArray[random].firstName} ${employeesArray[random].lastName}, our random drawing winner!`
   );
 };
-
-/*
-  ====================
-  STARTER CODE
-  Do not modify any of the code below this line:
-*/
 
 // Display employee data in an HTML table
 const displayEmployees = function (employeesArray) {
