@@ -16,7 +16,7 @@ Recently, I developed an Employee Payroll Tracker. This application is designed 
 
 ![screenshotofwebsite](./assets/Screenshot-Employee-Payroll.png)
 
-[Link to Deployed Website]()
+[Link to Deployed Website](https://jordangwiz.github.io/Employee-Payroll/)
 
 ## Collaborators
 
