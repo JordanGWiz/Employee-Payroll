@@ -10,7 +10,7 @@ const collectEmployees = function () {
   while (addEmployees) {
     const firstName = prompt("What is the employee's first name?");
     const lastName = prompt("What is the employee's last name?");
-    const salary = prompt("What is the employee's salary?");
+    const salary = parseFloat(prompt("What is the employee's salary?"));
 
     //Construct an employee object and add to the array.
     let employee = {
